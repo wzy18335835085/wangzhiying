@@ -1,0 +1,242 @@
+body{
+	margin:0;
+	font-family:"微软雅黑";
+	min-width: 980px;
+}
+h1,h2,h3,h4,h5,h6,ul,li,p{
+	margin:0;
+	padding: 0;
+	/*使用UL和LI时后,去掉默认的小圆点*/
+	list-style:none;	
+}
+a{
+	
+	text-decoration: none;}
+a:hover{
+	text-decoration: underline;
+	}
+
+
+
+/*开始头部*/
+.header{
+	padding:15px 0;
+	/*border:1px solid black;*/
+	background: #f5f5f5;
+}
+
+.logo{
+	float:left;
+	font-size:30px;
+	font-weight: bold;
+	margin-right:10px;
+
+}
+.search{
+	float:left;
+	/*border:1px solid#ccc;*/
+	background:#fff;
+	padding-left: 15px;
+	font-size: 13px;
+	color: #ccc;
+	border-radius:5px;
+	width:360px;
+	margin-right: 15px;
+}
+.header-c{
+	height:30px;
+	line-height: 28px;
+}
+
+
+/*.functionlist{
+	float:right;
+}*/
+.functionlist li{
+	float: left;
+	padding:0 10px;
+	font-size: 13px;
+	font-weight: bold;
+}
+.signin,.signup{
+	float: right;
+	padding:3px 12px;
+	border: 1px solid #ccc;
+	font-size: 13px;
+	border-radius: 5px;
+	line-height:17px;
+	margin-top: 3px;
+}
+.signin{
+
+	margin-left: 10px;
+	background-image: linear-gradient(#fcfcfc,#eee);
+}
+.signup{
+	background-image:linear-gradient(#8add6b,#60b044);
+	color:#fff;
+}
+/*.signup{
+	font-size: 13px;
+}*/
+
+.section{
+	padding: 0;
+	background: white;
+	/*border-bottom: 1px solid black;*/
+}
+.container{
+	margin:0 auto;
+	width:980px;
+	/*background: white;*/
+	/*border:2px solid black;*/
+}
+.sub-tittle{
+	font-size: 42px;
+	text-align: center;
+	padding-top:20px;
+	font-weight: normal;
+}
+.sub-info{
+	font-size:16px;
+	color:#767676;
+	text-align: center;
+	margin-top: 10px;
+}
+.gh-img{
+	width:100%;
+	height:200px;
+	margin-top: 30px;
+}
+
+.enterprise{
+	background-image:linear-gradient(#202d5f, #614381);
+	padding:0;
+	
+}
+/*后代处理器*/
+.enterprise h2{
+	color: #f5f5f5;
+}
+/*T0D0:待优化*/
+.btn{
+	text-align: center;
+	color: #f5f5f5;
+	padding: :12px 20px;
+	font-size: 18px;
+	border-radius: 6px;
+	/*border:1px solid white;*/
+}
+.btn-blue{
+	width:346px;
+	margin:15px auto;
+	text-align: center;
+	line-height:38px;
+	border-radius:3px;
+	background-image: linear-gradient(#45b3f3,#1d6ac8);
+	border-radius:7px;
+}
+.btn-green{
+	width:340px;
+	text-align:center;
+	line-height: 38px;
+	border-radius:3px;
+	margin:30px auto;
+	background-image: linear-gradient(#79d858,#569e3d);
+}
+.main{
+	background:#202020 ;
+}
+.signup-form{
+	width:320px;
+	height:345px;
+	/*border:1px solid black;*/
+	float:right;
+}
+.main-intro{
+	width:620px;
+	color:#f5f5f5;
+
+	/*border:2px solid red;*/
+	float:left;
+}
+.main-intro p{
+	font-size:20px; 
+}
+.main-c{
+	height:351px;
+}
+.big-tittle{
+	font-size: 70px;
+	padding-top:10px;
+	margin-top:15px;
+	/*font-weight:normal;*/
+}
+.a{
+	height:45px;
+	line-height: 40px;
+	background: white;
+	padding-left:13px;
+	/*border:1px solid red;*/
+	margin-top:10px; 
+	border-radius: 3px;
+}
+.note{
+	color:white;
+	font-size: 10px;
+	margin:8px auto;
+}
+.btn-green2{
+	height:42px;
+	color: white;
+	line-height: 42px;
+	text-align: center;
+	font-size:20px; 
+	border-radius:3px;
+	background-image: linear-gradient(#79d858,#569e3d);
+}
+.love-reason{
+	width:487.75px;
+	height:350px;
+	/*border:1px solid red;*/
+	float:left;
+	text-align: center;
+}
+	
+
+.love{
+	height:780px;
+}
+.love-reason img{
+	width:112px;
+	height:116px;
+	/*border:1px solid red;*/
+	margin:50 auto;
+}
+.love p,h3{
+	text-align: center;
+}
+.foot{
+	padding:0px 0;
+	/*border:1px solid black;*/
+	font-size: 12px;
+	background:white;
+}
+.foot-a{
+	height:50px;
+	line-height: 54px;
+	/*text-align: center;*/
+}
+.dibu li{
+	float:left;
+	margin-right: 15px;
+}
+.juzhong{
+float:left;
+margin-left:150px;
+}
+.dibu2 li{
+ 	float:right;
+ 	margin-right: 15px;
+ 	color:black;
+}

@@ -1,0 +1,62 @@
+body{
+	margin:0;
+	padding: 0;
+	background-image: url('../images/14.jpg');
+	background-size: cover;
+	font-family: '造字工房劲黑';
+	font-style:block;
+}
+#sence{
+	width:800px;
+	height:650px;
+	/*border:1px solid red;*/
+	margin:10 auto;
+	position:relative;
+}
+#xia_left{
+	width:90px;
+	height:120px;
+/*	border:1px solid red;*/
+	position: absolute;
+	bottom:10px;left:70px; 
+}
+#xia_right{
+	width:90px;
+	height:120px;
+/*	border:1px solid red;*/
+	position: absolute;
+	bottom:10px;right:70px; 
+}
+#midum_top{
+	width:100px;
+	height:40px;
+/*	border:1px solid blue;*/
+	border-radius:30%;
+	position: absolute;
+	bottom:110px;
+	left:330px;
+	text-align: center;
+	line-height: 40px;
+	background: orange;
+}
+#midum_bottom{
+	width:100px;
+	height:40px;
+/*	border:1px solid blue;*/
+	border-radius:30%;
+	position: absolute;
+	bottom:50px;
+	left:330px;
+	text-align: center;
+	line-height: 40px;
+	background: orange;
+}
+/*-------------------------------------*/
+.per{
+	width:90px;
+	height:120px;
+	border-radius: 5%;
+	border:1px solid black;
+	position: absolute;
+	font-weight: bolder;
+}

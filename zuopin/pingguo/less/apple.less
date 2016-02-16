@@ -1,0 +1,327 @@
+@import "var";
+@import "base";
+.public(){
+  &{
+    margin:0 auto;
+  }
+  & > .row {
+    width: 100%;
+    .clear();
+  }
+  &-fluid {
+    width: 100%;
+    .clear();
+  }
+  &-fluid > .row {
+    width: 100%;
+    .clear();
+  }
+}
+.header{
+  height:44px;
+  width:100%;
+  color:#fff;
+  background:#000;
+  text-align:center;
+  line-height: 44px;
+}
+.header-con{
+  margin:0 auto;
+  max-width:1024px;
+}
+.menu{
+  width:300%;
+  background:#000;
+  padding:0 50px 100px;
+  display:none;
+  z-index: 9999;
+}
+.menus{
+  border-bottom:1px solid #bbb;
+  display:block;
+  margin:0 auto;
+  text-align:left;
+  height:50px;
+  line-height:50px;
+};
+.cent-l{
+ text-align:left;
+}
+.cent-c{
+  text-align:center;
+}
+.cent-r{
+  text-align:right;
+}
+.footer{
+  width:100%;
+  background:#f2f2f2;
+  height:356px;
+  border:1px solid #f2f2f2;
+  font-size:12px;
+  color:#666;
+}
+.row1{
+  width:20%;
+  float:left;
+}
+.content{
+  height:320px;
+  margin:20px auto 0;
+  //width:95%;
+  max-width:1024px;
+  padding:0 22px;
+}
+.row1 .footer-title{
+  font-weight:bold;
+}
+.row1 .footer-con{
+  font-weight:normal;
+  margin-top:10px;
+}
+.row1 li{
+  height:20px;
+}
+//---------------lunbo----------------
+
+.background{
+  //width:100%;
+  background:url(../images/home_hero_ssn_large.png) no-repeat;
+  background-position:center;
+}
+//----------------promo---------------
+.promo{
+  width:100%;
+  height:200px;
+  float:left;
+  border:1px solid #fff;
+}
+.promo:nth-child(1){
+background:url(../images/1.jpg) no-repeat center;
+}
+.promo:nth-child(2){
+  background:url(../images/2.jpg) no-repeat center;
+}
+.promo:nth-child(3){
+  background:url(../images/3.jpg) no-repeat center;
+}
+.promo:nth-child(4){
+  background:url(../images/4.jpg) no-repeat center;
+}
+
+.lists:nth-child(1){
+  background:url(../images/home_hero_ssn_large.png) no-repeat center;
+}
+.lists:nth-child(2){
+  background:url(../images/home_hero_evergreen_ipad_medium.jpg) no-repeat center;
+}
+.lists:nth-child(3){
+  background:url(../images/download.jpg) no-repeat center;
+}
+.lists:nth-child(4){
+  background:url(../images/home_hero_cny_medium.jpg) no-repeat center;
+}
+.lists:nth-child(5){
+  background:url(../images/home_hero_ssn_large.png) no-repeat center;
+}
+//---------------------------------------------------------------------
+
+.response(@type,@i:0) when (@i<=@col){
+  &>.row>.col-@{type}-@{i}{
+    float:left;
+    width:@i/@col*100%;
+  };
+  &-fluid>.row>.col-@{type}-@{i}{
+    float:left;
+    width:@i/@col*100%;
+  };
+  .response(@type,@i+1);
+  &>.row>.col-@{type}-left-@{i}{
+    position:relative;
+    left:@i/@col*-100%
+  }
+  &>.row>.col-@{type}-right-@{i}{
+    position:relative;
+    left:@i/@col*100%
+  }
+  &-fluid>.row>.col-@{type}-left-@{i}{
+    position:relative;
+    left:@i/@col*-100%
+  }
+  &-fluid>.row>.col-@{type}-right-@{i}{
+    position:relative;
+    left:@i/@col*100%
+  }
+  &>.row>.col-@{type}-v{
+    display:block;
+  }
+  &>.row>.col-@{type}-h{
+    display:none;
+  }
+  &-fluid>.row>.col-@{type}-v{
+    display:block;
+  }
+  &-fluid>.row>.col-@{type}-h{
+    display:none;
+  }
+}
+  .back{
+    width:100%;
+    overflow: hidden;
+    position:relative;
+  }
+  .banner{
+    .background;
+    background-size:auto 300px;
+    height:348px;
+    width:500%;
+    margin-top:10px;
+    text-align:center;
+  }
+  .banner h1{
+    font-weight:bold;
+    font-size:36px;
+    margin:5px auto;
+  }
+  .banner h3{
+    font-weight:normal;
+    font-size:24px;
+  }
+  .banner span{
+    font-size:12px;
+    color:#08c;
+  }
+  .lists{
+    width:20%;
+    height:100%;
+  }
+.banner-btn{
+  width:150px;
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:10px;
+  margin:auto;
+  //border:1px solid black;
+}
+.banner-btn .btn{
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background:#ccc;
+  margin:0 10px;
+  float:left;
+}
+
+  .promo {
+  width: 100%;
+  background-size:cover;
+  }
+  .menu-title{
+    width:100%;
+    height:auto;
+    border-bottom: 1px solid #ccc;
+    line-height:44px;
+    .clear;
+  }
+  .menu-title span{
+    float:right;
+    padding-right:30px;
+  }
+  .menu-con{
+    width:100%;
+    font-size:1em;
+    background:#f2f2f2;
+    display:none;
+    .clear;
+  }
+  .menu-con li{
+    margin-left:30px;
+  }
+  .container {
+    & {
+      width: @num1*1px-100px;
+    }
+    .clear();
+    .response(s);
+    .public;
+  }
+//}
+@media screen and (min-width:@num1){
+  .back{
+    width:100%;
+    overflow: hidden;
+    position:relative;
+  }
+  .banner{
+    background-size:auto 500px;
+    height:600px;
+    width:500%;
+    margin-top:10px;
+    text-align:center;
+    .background;
+  }
+
+  .lists:nth-child(1){
+    background:url(../images/home_hero_ssn_large.png) no-repeat center;
+    background-size:inherit;
+  }
+  .lists:nth-child(2){
+    background:url(../images/home_hero_evergreen_ipad_medium.jpg) no-repeat center;
+    background-size:inherit;
+  }
+  .lists:nth-child(3){
+    background:url(../images/download.jpg) no-repeat center;
+    background-size:inherit;
+  }
+  .lists:nth-child(4){
+    background:url(../images/home_hero_cny_medium.jpg) no-repeat center;
+    background-size:inherit;
+  }
+  .lists:nth-child(5){
+    background:url(../images/home_hero_ssn_large.png) no-repeat center;
+  }
+
+  .banner h1{
+    font-weight:bold;
+    font-size:52px;
+    margin:5px auto;
+  }
+  .banner h3{
+    font-weight:normal;
+    font-size:28px;
+  }
+  .banner span{
+    font-size:16px;
+    color:#08c
+  }
+
+  .lists{
+    width:20%;
+    height:100%;
+  }
+  .promo {
+    width: 50%;
+    background-size:cover;
+  }
+  .footer2{
+    display:none;
+  }
+  .container{
+    width:@num1;
+    .response(m);
+    .public;
+  }
+}
+@media screen and (min-width:@num2){
+  .promo {
+    width: 25%;
+    background-size:cover;
+  }
+  .container {
+    width: @num2;
+    .response(l);
+    .public;
+  }
+
+}

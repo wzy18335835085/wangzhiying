@@ -1,0 +1,97 @@
+body{
+	padding: 0;
+	margin: 0;
+	font-family: "微软雅黑";
+/*	background-image: url('../images/3.jpg');*/
+	background-size: cover;
+}
+.zhuangtai{
+	width: 100%;
+	height:20px;
+	background: black;
+	text-align: center;
+	line-height: 20px;
+	color: white;
+
+}
+#biankuang{
+	width:410px;
+	height:700px;
+/*	border-radius: 15%;*/
+	overflow: hidden;
+	/*border: 1px solid red;*/
+	margin: 0 auto;
+	position: relative;
+	background-color: #4BC4E8;
+
+}
+.chuangkou{
+	width: 410px;
+	height: 100px;
+	border: 3px solid black;
+	margin: 30px auto;
+	background-color: #0F0E0E;
+	font-size: 40px;
+	text-align: right;
+	line-height: 100px;
+}
+.chuangkou .pai{
+	width: 390px;
+	height:32px;
+	/*border: 1px solid black;*/
+	margin: 0px auto;
+	background-color: #0F0E0E;
+	font-size: 30px;
+	text-align: right;
+	line-height: 32px;
+	color:white;
+}
+.anjian.y{
+	background-color: #1d1a1a;
+	color:white;
+}
+.anjian.e{
+	background-color: #999898;
+	color:white;
+}
+.anjian{
+	width: 80px;
+	height: 50px;
+	/*border: 1px solid black;*/
+	float:left;
+	margin: 10px;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 50px;
+	box-shadow: 1px 1px 20px black;
+	cursor:pointer;
+	background-color: white;
+}
+.anjian:hover{
+	background-color: #ff00ff;
+	box-shadow: 2px 3px 10px black;
+}
+.anjian.cheng{
+	width: 80px;
+	height:120px;
+	background-color:rgb(253, 115, 16);;
+	position: absolute;
+	right: 5px;
+	bottom:85px;
+}
+.anjian.ling{
+	width:180px;
+	height:50px;
+	/*border: 1px solid red;*/
+	float: left;
+
+}
+.anjian.end{
+	float: left;
+}
+#qinling{
+	background-color: #ff5666;
+}
+#xiaoshudian{
+	background: #ff888f;
+}

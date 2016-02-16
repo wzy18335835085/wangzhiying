@@ -1,0 +1,64 @@
+div {
+  background: red;
+}
+div {
+  width: 30px;
+}
+.ss {
+  width: 300px;
+  *width: 600px;
+  _width: 800px;
+  height: 300px;
+  background: red;
+  /* CSS hack ie6  ie7 */
+  border-radius: 20% 50px 50% 20px;
+  -webkit-border-radius: 20% 50px 50% 20px;
+  -moz-border-radius: 20% 50px 50% 20px;
+  -o-border-radius: 20% 50px 50% 20px;
+  -ms-border-radius: 20% 50px 50% 20px;
+}
+div1 {
+  width: 300px;
+  *width: 600px;
+  _width: 800px;
+}
+div2 {
+  width: 300px;
+  *width: 600px;
+  _width: 800px;
+}
+div3 {
+  width: 300px;
+  *width: 600px;
+  _width: 800px;
+}
+div4 {
+  width: 300px;
+  *width: 600px;
+  _width: 800px;
+}
+div5 {
+  width: 300px;
+  *width: 600px;
+  _width: 800px;
+}
+div6 {
+  width: 300px;
+  *width: 600px;
+  _width: 800px;
+}
+div7 {
+  width: 300px;
+  *width: 600px;
+  _width: 800px;
+}
+div8 {
+  width: 300px;
+  *width: 600px;
+  _width: 800px;
+}
+div9 {
+  width: 300px;
+  *width: 600px;
+  _width: 800px;
+}

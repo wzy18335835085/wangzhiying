@@ -1,0 +1,306 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "FZDHT";
+}
+#big{
+	width: 100%;
+	min-width:1081px;
+	height: 700px; 
+	/*border: 1px solid red;*/
+}
+#top{
+	width: 100%;
+	height:7%;
+	/*border: 1px solid red;*/
+	position: relative;
+	background: #fcfcf9;
+	border-bottom: #ecc2c0;
+}
+#midum{
+	width: 100%;
+	height:86%;
+	border-top: 1px solid #E5ACA9;
+	/*border-bottom: 1px solid #CCCCCC;*/
+	/*border: 1px solid red;*/
+}
+#bottom{
+	width:100%;
+	height:7%;
+	/*border:1px solid red;*/
+	border:1px solid #ecc2c0;
+}
+.icon{
+	float: left;
+}
+#icon{
+	width:15%;
+	height:100%;
+	/*border:1px solid red;*/
+	text-align: center;
+	line-height: 58px;
+}
+#izhong{
+	width:20%;
+	height:100%;
+	/*border:1px solid red;*/
+	text-align: center;
+	line-height: 58px;
+	margin-left: 25%;
+}
+#zuojian{
+	width:20px;
+	height:20px;
+	/*border:1px solid red;*/
+}
+#youjian{
+	width:20px;
+	height:20px;
+	/*border:1px solid red;*/
+}
+#iyou{
+	width: 45px;
+	height:100%;
+	/*border:1px solid red;*/
+	text-align: center;
+	line-height: 58px;
+	float:right;
+}
+.da{
+	width: 48%;
+	height:100%;
+/*	border: 1px solid red;*/
+	float: left;
+}
+.yi{
+	width: 43%;
+	float: left;
+}
+.er{
+	width: 43%;
+	float: right;
+	margin-left: 58px;
+}
+#mt{
+	width:90%; 
+	height: 30%;
+	/*border: 1px solid red; */
+	margin-bottom: 10px;
+	margin: 5px auto;
+}
+#mt2{
+	width:90%; 
+	height: 60%;
+	margin: 1px auto;
+	border: 1px solid #d2d2d2; 
+	/*text-align: center;
+	line-height: 350px;*/
+	position: relative;
+}
+.tu{
+	width: 43%;
+	height:100%;
+	/*border: 1px solid red;*/
+}
+.zuo{
+	float: left;
+}
+#shang{
+	width: 191px;
+	height:126px;
+	/*border: 1px solid red;*/
+	text-align: center;
+	line-height:120px;
+	font-size: 130px;
+}
+#xia{
+	width: 100%;
+	height:30%;
+	/*border: 1px solid red;*/
+	/*text-align: center;*/
+	line-height:50px;
+	font-size: 18px;
+	/*font-weight:bold;*/
+}
+.rili{
+	/*width:30%;*/
+	float: right;
+}
+.clear{
+	clear:both;
+}
+#rilitop{
+	width: 100%;
+	height:12%;
+	/*border:1px solid #d2d2d2;*/
+	margin-bottom: 5px;
+}
+.qige{
+	width: 13%;
+	height:100%;
+	color: #bebebe;
+	/*border: 1px solid #d2d2d2;*/
+	float: left;
+	text-align: center;
+	line-height: 16px;
+	margin: 1px;
+}
+.ti{
+	width: 13%;
+	height:20px;
+	/*border: 1px solid #d2d2d2;*/
+	float: left;
+	text-align: center;
+	line-height: 16px;
+	/*margin: 3px 1px;*/
+	margin-left: 1px;
+}
+.ti:hover{
+	background:#747474;
+	cursor: default;
+}
+.tt{
+	color: #8F8F91;
+}
+/*.hong{
+	background: #ff3b30;
+	color:white;
+}*/
+.txt{
+	background:#f0f0f0;
+}
+.di{
+	width: 15%;
+	height:100%;
+	/*border: 1px solid red;*/
+	float: left;
+}
+#shezhi{
+	float: left;
+	text-align: center;
+	line-height: 45px;
+}
+#sp{
+	margin-bottom: 50px;
+}
+#hh{
+	border: 1px;
+	background: black;
+}
+.dizhong{
+	width:20%;
+	height:100%;
+	/*border:1px solid red;*/
+	text-align: center;
+	line-height: 58px;
+	margin-left: 25%;
+}
+.diyou{
+	float: right;
+	width:45px;
+}
+.dibu{
+	float: left;
+}
+.diy{
+	width:12%;
+	height:50%;
+	float: left;
+	margin-top: 7px;
+	/*border:1px solid red;*/
+	margin-left:2px;
+}
+.die{
+	width: 60%;
+	height: 50%;
+	margin-left: 24px;
+	margin-top: 10px;
+	border-radius:5%;
+	text-align: center;
+	line-height:20px;
+	/*border: 1px solid red;*/
+}
+.dis{
+	width:12%;
+	height:50%;
+	float: right;
+	margin-top: 7px;
+	margin-right:2px;
+	/*border:1px solid red;*/
+}
+.rzy{
+	width: 32%;
+	height:100%;
+	/*border: 1px solid red;*/
+	border-left: none;
+	float: left;
+}
+.rzy1{
+	background: red;
+}
+#mm{
+	width: 20px;
+	height: 20px;
+/*	border: 1px solid red;*/
+	margin-bottom: 5px;
+}
+#ere{
+	position: relative;
+}
+#hongx{
+	width:740px;
+	height:2px;
+	background: red;
+	position: absolute;
+	top:0;
+	left: 0;
+}
+#fangtupian1{
+	width: 400px;
+	height: 150px;
+	/*border: 1px solid red;*/
+	opacity: 0.7;
+	/*background: red;*/
+	position: absolute;
+	top:1px;
+	left: 2px;
+}
+.ing{
+	width: 40px;
+	height:30px;
+}
+.hei{
+	background: black;
+}
+#front{
+	cursor:pointer;
+}
+#vv{
+	width: 500px;
+	height: 500px;
+/*	border: 1px solid red;*/
+	position: absolute;
+	top: 50%;
+	margin-top: -250px;
+	left:50%;
+	margin-left: -250px;
+	display: none;
+}
+#xxx{
+	width: 20px;
+	height: 20px;
+	border:1px solid red;
+	background: orange;
+	border-radius: 50%;
+	position: absolute;
+	top:0;
+	right: 0;
+	text-align: center;
+	line-height: 20px;
+	cursor:pointer;
+	color:white;
+}
+#image{
+	width: 500px;
+	height: 500px;
+}

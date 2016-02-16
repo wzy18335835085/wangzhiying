@@ -1,0 +1,91 @@
+@import "var";
+@import "base";
+*{
+  box-sizing: border-box;
+}
+.red{
+  border:1px solid red;
+  height:100px;
+}
+.public(){
+  &{
+    margin:0 auto;
+  }
+  & > .row {
+    width: 100%;
+    .clear();
+  }
+  &-fluid {
+    width: 100%;
+    .clear();
+  }
+  &-fluid > .row {
+    width: 100%;
+    .clear();
+  }
+}
+.response(@type,@i:0) when (@i<=@col){
+  &>.row>.col-@{type}-@{i}{
+    float:left;
+    width:@i/@col*100%;
+  };
+  &-fluid>.row>.col-@{type}-@{i}{
+    float:left;
+    width:@i/@col*100%;
+  };
+  .response(@type,@i+1);
+  &>.row>.col-@{type}-left-@{i}{
+    position:relative;
+    left:@i/@col*-100%
+  }
+  &>.row>.col-@{type}-right-@{i}{
+    position:relative;
+    left:@i/@col*100%
+  }
+  &-fluid>.row>.col-@{type}-left-@{i}{
+    position:relative;
+    left:@i/@col*-100%
+  }
+  &-fluid>.row>.col-@{type}-right-@{i}{
+    position:relative;
+    left:@i/@col*100%
+  }
+  &>.row>.col-@{type}-v{
+    display:block;
+  }
+  &>.row>.col-@{type}-h{
+    display:none;
+  }
+  &-fluid>.row>.col-@{type}-v{
+    display:block;
+  }
+  &-fluid>.row>.col-@{type}-h{
+    display:none;
+  }
+}
+@media screen and (max-width:@num1) {
+  .container {
+    & {
+      width: @num1*1px-100px;
+    }
+    .clear();
+    .response(s);
+    .public;
+  }
+
+}
+@media screen and(min-width:@num1){
+  .container{
+    width:@num1;
+  .response(m);
+    .public;
+  }
+}
+@media screen and(min-width:@num2){
+  .container {
+    width: @num2;
+    .response(l);
+    .public;
+  }
+}
+
