@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .clock{
+            width:150px;height:150px;
+            /*border:10px solid #aaa;*/
+            border-radius: 50%;
+            position:absolute;
+            left:236px;
+            top:390px;
+            /*background:radial-gradient(#fff,#ccc);*/
+        }
+        .clock1{
+            width: 1000px;
+            height: 700px;
+            margin: 0 auto;
+            background:url('naozhong.jpg');
+            background-repeat:no-repeat;
+            /*border:2px solid red;*/
+            position: relative;
+            /*top:50px;
+            right:50px;
+            z-index: 1000;*/
+        }
+
+        .dian{
+                width: 10px;
+                height: 10px;
+               border:1px solid black;
+               background: #fff;
+               border-radius: 50%;
+               position:absolute;
+               top:94px;
+               left: 94px;
+               z-index: 1011;
+        }
+    </style>
+    <script>
+     window.onload=function(){
+         var clock=document.getElementsByClassName("clock")[0];
+         createMark();
+         var time=new Date();
+         var h=time.getHours();
+         var m=time.getMinutes();
+         var s=time.getSeconds();
+         var hp=createPointer(40,5,"#000",30*h-90+(6*m)/12);
+         var mp=createPointer(50,4,"green",6*m-90);
+         var sp=createPointer(70,2,"red",6*s-90);
+
+        setInterval(function(){
+            var time=new Date();
+            var h=time.getHours();
+            var m=time.getMinutes();
+            var s=time.getSeconds();
+           hp.style.transform="translate(100px,"+hp.t+"px) rotate("+(30*h-90+(6*m)/12)+"deg)";
+            mp.style.transform="translate(100px,"+mp.t+"px) rotate("+(6*m-90)+"deg)";
+            sp.style.transform="translate(100px,"+sp.t+"px) rotate("+(6*s-90)+"deg)";
+        },1000)
+
+
+
+         //刻度
+         function createMark(){
+             for(var i=0;i<60;i++){
+                 var w, h,l;
+                 if(i%5==0){
+                    w=0;//4
+                     h=0;//10
+                 }else{
+                     w=0;//2
+                     h=0;//6
+                 }
+                 l=(200-w)/2;
+                 var div=document.createElement("div");
+                 div.style.cssText="width:"+w+"px;height:"+h+"px;background:#d9ddde;position:absolute;left:0;top:0";
+                 div.style.transform="translate("+l+"px,0px) rotate("+i*6+"deg)";
+                 // div.style.transformOrigin="center 0px"
+                 clock.appendChild(div);
+             }
+         }
+
+         //指针
+         function  createPointer(w,h,c,a){
+            var div=document.createElement("div");
+            var t=(200-h)/2;
+             div.t=t;
+            div.style.cssText="width:"+w+"px;height:"+h+"px;background:"+c+";position:absolute;left:0;top:0;transform:translate(100px,"+t+"px) rotate("+a+"deg);transform-origin:left center";
+            clock.appendChild(div);
+             return div;
+         }
+
+     }
+    </script>
+</head>
+<body style="background:url('bj1.jpg');background-size:cover">
+   <div class="clock1">
+        <audio  autoplay="autoplay"><!-- //controls="controls" -->
+          <source src="闹铃.wav" type="audio/ogg" />
+          <source src="闹铃.wav" type="audio/mpeg" />
+        </audio>
+    <marquee style="line-height:50px;font-size:10px">滴答！滴答！......   滴答！滴答！......</marquee>
+            <div class="clock">
+                <div class="dian"></div>
+            </div>
+    </div>
+</body>
+</html>
